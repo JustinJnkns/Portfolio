@@ -13,7 +13,7 @@
 }
 
 body{
-    color: var(--light-purple);
+    color:black;
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -39,8 +39,8 @@ margin: 7px 0;
 
 header h1{
     font-weight: bold;
-    font-size: 36px;
-    color: var(--light-blue);
+    font-size:48px;
+    color:var(--light-purple);
     margin: 0;
     text-shadow: 0 0 20PX var(--bright-blue);
 }
@@ -82,17 +82,19 @@ header nav ul li a:hover {
     display:flex;
     justify-items: flex-end;
     flex-wrap:wrap;
-    min-height: 400px;
+ 
 }
 
 .hero-subtitle{
+    position: flex;
    width: 40%;
    text-align: left;
    margin:2%;
    color: black;
-   font:24px;
+   font:28px;
    text-shadow: 0 0 10px var(--bright-blue);
    justify-items: flex-end;
+   
 }
 /*MAIN BODY*/
 
@@ -100,21 +102,51 @@ header nav ul li a:hover {
     background-color: var(--dark-gray) ;
 }
 
-.about-content{
+.about-me{
+    width: 100%;
     display: flex;
-    width:60%;
+}
+
+.about-content{
+    margin: 0px 0;
+    display: flex;
+    flex-wrap: wrap;
+    width:70%;
     justify-content: flex-end;
+    text-align: left;
+    color: black;
+    font-size:24px;
+    border-top: black solid 2px;
+    border-bottom:black solid 2px
+}
+
+.about-content p{
+    margin:15px 20px;
+    font-weight: lighter;
+    font-size: 1.7vw;
+    color: var(--bright-blue);   
+ 
 }
 
 .section-title{
     display:flex ;
     width: 30%;
-    justify-content: flex-start;
+    justify-content: center;
+    align-items: center;
+    border:black solid 3px;
+    margin: 5 auto;
+    background-image: url("../Images/metal.jpg");
+    background-size: cover;
+    background-position: 75% center;
+    min-height: 400px;
+    font-size: 38px;
+    text-shadow: 0 0 20PX var(--dark-purple)   
+ 
 }
 /*GRID*/
 .work-grid-wrapper{
     display: flex;
-    width: 100%;
+    width: 70%;
     justify-content:flex-end ;
 }
 .work{
@@ -129,15 +161,22 @@ header nav ul li a:hover {
     margin: 20px;
     border: 6;
     min-height: 400px;
-    border:10px solid darkred;    
+    border:10px solid black;    
 }
 
 .grid-item-run-buddy{
+    background-image: url("../Images/050-mock-up.jpg");
+    background-size: cover;
+    background-position: 30%;
     grid-column:1 / span 3;
     grid-row: 1 / span 3;
     text-align: flex-start;
     border: 2px solid black;
+    text-align: center;
+    text-decoration: none;
+    color: black;
     }
+ 
 .future-project-1{
     grid-column-start:1;
     grid-column-end:3;
@@ -161,4 +200,35 @@ header nav ul li a:hover {
     grid-row-start: 1;
     grid-row-end: 6;
     border: 2px solid black;
+}
+
+
+
+/*CONTACT*/
+
+.contact-info{
+}
+
+.personal-info{
+    display: flex;
+    width: 60%;
+    justify-content: flex-end;
+
+}
+
+.personal-info ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-end;
+    list-style: none;
+}
+
+
+
+.personal-info ul li{
+    padding: 10px 15px;
+    font-weight: lighter;
+    font-size: 1.55vw;
+    text-shadow: 0 0 10px rgba(0, 0, 0,.5);
 }
