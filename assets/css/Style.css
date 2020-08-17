@@ -1,18 +1,57 @@
 /*HEADER*/
+:root {
+    --light-purple:	rgb(224, 104, 237);
+    --bright-blue: 	rgb(154, 247, 251);
+    --dark-purple: 	rgb(191, 109, 254);
+    --dark-gray: rgb(18, 38, 52);
+ }
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body{
+    color: var(--light-purple);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
 header{
-background-color: deepskyblue;
+background-color:var(--bright-blue);
 display: flex;
 justify-content: space-between;
 flex-wrap: wrap;
 position: sticky;
 top: 0;
 max-height: 60px;
+background-image: url("../Images/blue-purple-lights.jpg");
+background-size: cover;
+background-position:80% ;
+background-attachment: fixed;
+z-index: 9999;
+
 }
 
 header nav{
 margin: 7px 0;
 }
 
+header h1{
+    font-weight: bold;
+    font-size: 36px;
+    color: var(--light-blue);
+    margin: 0;
+    text-shadow: 0 0 20PX var(--bright-blue);
+}
+
+header a{
+    text-decoration: none;
+    color: var(--light-purple);
+    text-shadow: 0 0 20PX var(--bright-blue);
+    flex-wrap: wrap;
+
+}
 
 header nav ul{
     display: flex;
@@ -28,16 +67,48 @@ header nav ul li a{
     font-weight: lighter;
     font-size: 1.55vw;
 }
+header nav ul li a:hover {
+    background-color: var(--bright-blue);
+    color: var(--dark-purple);
+    border-radius: 10px;
+    
+}
 
+.hero{
+    background-image: url("../Images/blue-purple-lights.jpg");
+    background-size:cover;
+    background-position: 80%;
+    background-attachment: fixed;
+    display:flex;
+    justify-items: flex-end;
+    flex-wrap:wrap;
+    min-height: 400px;
+}
 
+.hero-subtitle{
+   width: 40%;
+   text-align: left;
+   margin:2%;
+   color: black;
+   font:24px;
+   text-shadow: 0 0 10px var(--bright-blue);
+   justify-items: flex-end;
+}
+/*MAIN BODY*/
 
+.main-body{
+    background-color: var(--dark-gray) ;
+}
 
-
-
+.about-content{
+    display: flex;
+    width:60%;
+    justify-content: flex-end;
+}
 
 .section-title{
     display:flex ;
-    width: 30;
+    width: 30%;
     justify-content: flex-start;
 }
 /*GRID*/
@@ -65,24 +136,29 @@ header nav ul li a{
     grid-column:1 / span 3;
     grid-row: 1 / span 3;
     text-align: flex-start;
+    border: 2px solid black;
     }
 .future-project-1{
     grid-column-start:1;
     grid-column-end:3;
     grid-row-start:4;
     grid-row-end: 6;
+    border: 2px solid black;
 } 
 .future-project-2{
     grid-column-start: 3;
     grid-column-end:5;
     grid-row-start: 4;
     grid-row-end: 6;
+    border: 2px solid black;
 }
 .future-project-3{
     grid-row-start: 1;
     grid-row-end: 4;
+    border: 2px solid black;
 }
 .future-project-4{
     grid-row-start: 1;
     grid-row-end: 6;
+    border: 2px solid black;
 }
